@@ -6,6 +6,38 @@
   height: 40vmin;
   pointer-events: none;
 }
+.navLeft{
+  margin:0;
+  padding:0;
+}
+
+.navRight{
+  margin:0;
+  padding:0;
+}
+.logo {height: 90px;background:#edeff22e;display: flex;justify-content: center;}
+.logo img{height: 100px;}
+.menu {min-height: 200px;height: 450px;background: #ffffff;}
+.menu ul {list-style: none;border-radius: 0px;margin-top: 50px;}
+.menu ul li{border: none;}
+.menu ul a {text-decoration: none;color: #333;}
+.menu ul li:hover {background: #e6f7fe;}
+.menu ul a.active{border-right: 2px solid #fc7747;}
+.menu ul a.active li{background: #74d1ff;}
+span.hi{padding: 10px; font-weight: 400;}
+
+.header {height: 90px;
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  padding:24px;
+}
+
+.bodyContainer {min-height: 400px;
+  height: auto;
+  background: #edeff22e;
+  padding: 48px 20px 20px 20px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

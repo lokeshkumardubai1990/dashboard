@@ -1,0 +1,9 @@
+.imgProduct{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.imgProduct img{
+    width: 120px;
+}

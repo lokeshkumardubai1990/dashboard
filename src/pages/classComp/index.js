@@ -4,7 +4,7 @@ class Classcomp extends React.Component {
   render() {
     return (
       <>
-        <p>Welcome to class component</p>
+        <p className="text-primary">Welcome to class component</p>
       </>
     );
   }

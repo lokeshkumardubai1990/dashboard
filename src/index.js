@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -6,9 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+export const Theme = createContext();
 root.render(
   <BrowserRouter>
-    <App />
+    <Theme.Provider value={{ userName: "Lokesh" }}>
+      <App />
+    </Theme.Provider>
   </BrowserRouter>
 );
 

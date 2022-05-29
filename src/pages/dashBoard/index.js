@@ -1,6 +1,7 @@
 import React from "react";
 import react from "../../assets/react.png";
 import { NavLink } from "react-router-dom";
+
 import "./index.css";
 
 const style = {
@@ -29,20 +30,18 @@ const cardDetails = [
 export default function Dashboard() {
   return (
     <div style={{ display: "flex" }}>
-      {/* <p className="text-primary">Welcome to Dashboard</p> */}
-      {cardDetails.map((items) => {
+      {/* <h4 className="text-primary">Welcome to Dashboard </h4> */}
+      {cardDetails.map((items, key) => {
         return (
-          <div className="card" style={style}>
+          <div key={key} className="card" style={style}>
             <div className="imgProduct">
               <img src={react} />
             </div>
             <div className="card-body">
               <h5 className="card-title">{items.title}</h5>
               <p className="card-text">{items.description}</p>
-              <NavLink to={items.linkTo}>
-                <a href="#" className="btn btn-primary">
-                  Click Here
-                </a>
+              <NavLink to={items.linkTo} className="btn btn-primary">
+                <div>Click Here</div>
               </NavLink>
             </div>
           </div>
